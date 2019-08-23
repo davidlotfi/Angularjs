@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angularjs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="lib\angular.min.js"></script>
+    <script type="text/javascript" src="Angularjs\controllers.js"></script>
+  </head>
+  <style media="screen">
+      img {
+        width: 100px;
+        height: 90px;
+      }
+  </style>
+  <body>
+    
+    <div class="main" ng-controller="MyControleur">
+        <ul class="artistlist">
+          <li class="artist cf"  ng-repeat="item in parrots">
+            <img ng-src="images_parrots/parrot_{{item.race}}.jpg" alt="{{item.race}}">
+            <div class="info">
+              <h2>{{item.race}}</h2>
+              <h3>{{item.desc}}</h3>
+            </div>
+          </li>
+        </ul>
+    </div>
+  </body>
+</html>
