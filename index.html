@@ -9,19 +9,22 @@
   </head>
   <style media="screen">
       img {
-        width: 100px;
-        height: 90px;
+
+        height: 70px;
+      }
+      .ss{
+        padding-top: 12px;
       }
   </style>
   <body>
-    
+
     <div class="main" ng-controller="MyControleur">
         <ul class="artistlist">
-          <li class="artist cf"  ng-repeat="item in parrots">
+          <li class="artist cf"  ng-repeat="item in parrots | limitTo:4">
             <img ng-src="images_parrots/parrot_{{item.race}}.jpg" alt="{{item.race}}">
             <div class="info">
               <h2>{{item.race}}</h2>
-              <h3>{{item.desc}}</h3>
+              <h3 class="ss">{{item.desc}}</h3>
             </div>
           </li>
         </ul>
