@@ -19,8 +19,19 @@
   <body>
 
     <div class="main" ng-controller="MyControleur">
+      <div class="search">
+        <h1>Perroquet</h1>
+        <label>recherche:</label>
+        <input ng-model="query" type="text" placeholder="Parrots..." autofocus>
+        <label class="formgroup">par:
+          <select ng-model="Order">
+             <option value="race">Race</option>
+             <option value="desc">Description</option>
+          </select>
+        </label>
+      </div>
         <ul class="artistlist">
-          <li class="artist cf"  ng-repeat="item in parrots | limitTo:4">
+          <li class="artist cf"  ng-repeat="item in parrots | filter:query | orderBy : Order">
             <img ng-src="images_parrots/parrot_{{item.race}}.jpg" alt="{{item.race}}">
             <div class="info">
               <h2>{{item.race}}</h2>
