@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>Angularjs</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="lib\angular.min.js"></script>
-    <script type="text/javascript" src="Angularjs\controllers.js"></script>
+    <script src="lib\angular.min.js"></script>
+    <script src="lib\angular-route.min.js"></script>
+    <script src="Angularjs\app.js"></script>
+    <script src="Angularjs\controllers.js"></script>
+
   </head>
   <style media="screen">
       img {
@@ -18,27 +21,8 @@
   </style>
   <body>
 
-    <div class="main" ng-controller="MyControleur">
-      <div class="search">
-        <h1>Perroquet</h1>
-        <label>recherche:</label>
-        <input ng-model="query" type="text" placeholder="Parrots..." autofocus>
-        <label class="formgroup">par:
-          <select ng-model="Order">
-             <option value="race">Race</option>
-             <option value="desc">Description</option>
-          </select>
-        </label>
-      </div>
-        <ul class="artistlist">
-          <li class="artist cf"  ng-repeat="item in parrots | filter:query | orderBy : Order">
-            <img ng-src="images_parrots/parrot_{{item.race}}.jpg" alt="{{item.race}}">
-            <div class="info">
-              <h2>{{item.race}}</h2>
-              <h3 class="ss">{{item.desc}}</h3>
-            </div>
-          </li>
-        </ul>
-    </div>
+    <div class="main" ng-view></div>
+
+
   </body>
 </html>
