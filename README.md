@@ -1,7 +1,7 @@
 # Angularjs
-## Perroquet, c'est une application single page basé sur l'angularjs :)
-### utilisation :
-il ya quelques navigateurs qui ne support pas les requets http local est ca provoque dans le cas du cette application une erreur comme suit:
+## Perroquet, c'est une application monopage(single page) basé sur l'angularjs :)
+### l'utilisation :
+Il ya quelques navigateurs qui ne support pas les requets http local est ca provoque une erreur si tu veut ouvrir par googlechrome ou opera comme suit:
 
 
 ![image](https://github.com/davidlotfi/Angularjs/blob/master/http.png)
@@ -10,7 +10,7 @@ pour cela les gens qui utilise les navigateurs  (googlechrome ou opera ) il faut
 
 ![image](https://github.com/davidlotfi/Angularjs/blob/master/localhost.png)
 
-les gens qui utilise edge microsoft ou mozilla ouvrir le projet directement ca marche sans erreur :).
+les gens qui utilise edge microsoft ou mozilla ouvrir le projet directement sans mettre dans un serveur .
 
 ![image](https://github.com/davidlotfi/Angularjs/blob/master/image1.jpg)
 ![image](https://github.com/davidlotfi/Angularjs/blob/master/image2.jpg)
